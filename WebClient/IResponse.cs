@@ -1,7 +1,6 @@
-﻿using GTFSRT;
-using System.Net;
+﻿using System.Net;
 
-namespace GTFS_RT
+namespace WebClientHelper
 {
     public interface IResponse<T> where T : class
     {

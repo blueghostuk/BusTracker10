@@ -1,7 +1,6 @@
-﻿using GTFSRT;
-using System.Net;
+﻿using System.Net;
 
-namespace GTFS_RT
+namespace WebClientHelper
 {
     internal class Response<T> : IResponse<T> where T : class
     {

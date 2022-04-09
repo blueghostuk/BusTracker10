@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GTFS-RT", "GTFS-RT\GTFS-RT.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TFWMFeedReader", "TFWMFeedReader\TFWMFeedReader.csproj", "{0896C9EB-769B-4412-AC8C-A4EEDD79DDFC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebClientHelper", "WebClient\WebClientHelper.csproj", "{D2D94902-6676-4820-BEA8-E7561AEB8C6E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{0896C9EB-769B-4412-AC8C-A4EEDD79DDFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0896C9EB-769B-4412-AC8C-A4EEDD79DDFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0896C9EB-769B-4412-AC8C-A4EEDD79DDFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2D94902-6676-4820-BEA8-E7561AEB8C6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2D94902-6676-4820-BEA8-E7561AEB8C6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2D94902-6676-4820-BEA8-E7561AEB8C6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2D94902-6676-4820-BEA8-E7561AEB8C6E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

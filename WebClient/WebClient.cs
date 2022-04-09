@@ -1,20 +1,19 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
+﻿using Microsoft.Extensions.Logging;
 using ProtoBuf;
 
-namespace GTFS_RT
+namespace WebClientHelper
 {
-    public abstract class FeedReader : IFeedReader
+    public abstract class WebClient : IWebClient
     {
         private readonly HttpClient _httpClient;
-        private readonly ILogger<FeedReader> _logger;
-        public FeedReader(HttpClient httpClient, ILogger<FeedReader> logger)
+        private readonly ILogger<WebClient> _logger;
+        public WebClient(HttpClient httpClient, ILogger<WebClient> logger)
         {
             _httpClient = httpClient ?? throw new ArgumentNullException(nameof(httpClient));
             _logger = logger ?? throw new ArgumentNullException(nameof(logger));
         }
 
-        public async Task<IResponse<T>> GetFeedAsync<T>(String uri, CancellationToken cancellationToken)
+        public async Task<IResponse<T>> GetAsync<T>(String uri, CancellationToken cancellationToken) where T : class
         {
             try
             {
