@@ -4,7 +4,7 @@ using Microsoft.Extensions.Options;
 
 namespace TFWMFeedReader
 {
-    public static class TFWMFeedReaderExtensions
+    public static class Extensions
     {
         private const string HttpClientName = "TFWM";
 
@@ -22,6 +22,11 @@ namespace TFWMFeedReader
 
                 return new TFWMFeedReader(httpClient, sp.GetRequiredService<ILogger<TFWMFeedReader>>(), sp.GetRequiredService<IOptions<TFWMOptions>>());
             });
+        }
+
+        public static IServiceCollection AddTFWMService(this IServiceCollection services)
+        {
+            return services.AddTransient<ITFWMService, TFWMService>();
         }
     }
 }

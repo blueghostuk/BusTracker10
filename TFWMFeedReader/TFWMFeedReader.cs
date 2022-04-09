@@ -17,7 +17,7 @@ namespace TFWMFeedReader
 
         public async Task<FeedMessage?> GetFeedMessageAsync(CancellationToken cancellationToken)
         {
-            var feedMessage = await GetAsync<FeedMessage>($"{_options.Endpoint}?app_id={_options.AppId}&app_key={_options.AppKey}", cancellationToken);
+            var feedMessage = await GetAsync<FeedMessage>($"{_options.Endpoint}?app_id={_options.ApiUser}&app_key={_options.ApiKey}", cancellationToken);
             if (feedMessage != null && feedMessage.StatusCode == System.Net.HttpStatusCode.OK)
             {
                 return feedMessage.Content;
