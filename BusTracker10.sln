@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32328.378
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GTFS-RT", "GTFS-RT\GTFS-RT.csproj", "{5465422B-E8E2-4C92-892A-357D705C669C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TFWMFeedReader", "TFWMFeedReader\TFWMFeedReader.csproj", "{0896C9EB-769B-4412-AC8C-A4EEDD79DDFC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5465422B-E8E2-4C92-892A-357D705C669C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5465422B-E8E2-4C92-892A-357D705C669C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5465422B-E8E2-4C92-892A-357D705C669C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5465422B-E8E2-4C92-892A-357D705C669C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0896C9EB-769B-4412-AC8C-A4EEDD79DDFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0896C9EB-769B-4412-AC8C-A4EEDD79DDFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0896C9EB-769B-4412-AC8C-A4EEDD79DDFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0896C9EB-769B-4412-AC8C-A4EEDD79DDFC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {362B4D47-D274-440D-A419-F3756BA7B679}
+	EndGlobalSection
+EndGlobal
